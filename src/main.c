@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     
     startup_completionSession(argc, argv, &session);
 
-    for ( ; ; ) {
+    while(1){
         completion_AcceptRequest(&session, stdin);
     }
 
